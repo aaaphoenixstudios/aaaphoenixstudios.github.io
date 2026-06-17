@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-subheading: "Montserrat", sans-serif;
+
+  --color-brand-bg: #FAF7F2;
+  --color-brand-accent: #FC8019;
+  --color-brand-text: #1C1C1C;
+  --color-brand-surface: #EAEAEA;
+  --color-brand-ivory-dark: #ECE7DF;
+  
+  --color-gold: #FC8019;
+  --color-gold-light: #FF9E4A;
+  --color-gold-dark: #C45600;
+  --color-charcoal: #FAF7F2;
+  --color-charcoal-light: #FFFFFF;
+  --color-charcoal-dark: #ECE7DF;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FAF7F2;
+  color: #1C1C1C;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Selection style */
+::selection {
+  background-color: var(--color-brand-accent);
+  color: #FFFFFF;
+}
+
+/* Modern luxury scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ECE7DF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-accent);
+}
+
+/* Infinite marquee helper */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-infinite {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee-infinite:hover {
+  animation-play-state: paused;
+}
+
+/* Orange glow background masks */
+.brand-glow-radial {
+  background: radial-gradient(circle at center, rgba(252, 128, 25, 0.08) 0%, rgba(250, 247, 242, 0) 75%);
+}
+
+.brand-cone-light {
+  background: conic-gradient(from 180deg at 50% 50%, rgba(252, 128, 25, 0) 0%, rgba(252, 128, 25, 0.035) 50%, rgba(252, 128, 25, 0) 100%);
+}
+
+/* Hide navigation default scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

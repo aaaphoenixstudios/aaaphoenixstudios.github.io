@@ -116,39 +116,6 @@ export const defaultCmsData: CmsData = {
     }
   ],
   projects: [
-    {
-      id: "prj-color-siblings",
-      name: "Siblings",
-      category: "COLOR DEPARTMENT",
-      year: 2025,
-      poster: "Siblings.jpeg",
-      videoUrl: "https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054fb1d23eb649830da0ab7fbde3640&profile_id=165",
-      director: "Rocky Rodriguez Jr.",
-      role: "Digital Intermediate & Master Color Styling",
-      platform: "Theatrical / Selected Festivals",
-      genre: "Art House / Drama",
-      imdbUrl: "https://www.imdb.com",
-      cast: ["Festival Ensembles"],
-      overview: "Finely stylized color aesthetics, utilizing customized film emulations and warm luma balances in an ACES calibrated grading space. Graded on our state-of-the-art DaVinci panels.",
-      gallery: ["Siblings.jpeg"]
-    },
-    {
-      id: "prj-color-10-days-apart",
-      name: "10 Days Apart",
-      category: "COLOR DEPARTMENT",
-      year: 2026,
-      poster: "10-Days-Apart.jpeg",
-      videoUrl: "https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054fb1d23eb649830da0ab7fbde3640&profile_id=165",
-      director: "Anjan Kommineni",
-      role: "Digital Intermediate Color Grading & HDR Mastering",
-      platform: "Theatrical / Selected Festivals",
-      genre: "Drama / Cinema",
-      imdbUrl: "https://www.imdb.com",
-      cast: ["Ensembles"],
-      overview: "A visually sublime feature marked by soft contrast and high dynamic range precision. Color graded entirely in DaVinci Resolve by Vidhan Bommalla to capture the nuanced shifting of autumn hues.",
-      gallery: ["10-Days-Apart.jpeg"]
-    },
-
     // ==========================================
     // EDITORIAL DEPARTMENT
     // ==========================================
@@ -847,9 +814,43 @@ export const defaultCmsData: CmsData = {
       cast: ["Leading Love Album team"],
       overview: "A highly acclaimed romantic film theme album. Features soft piano layers, melodic flute harmonies, and rich warm vocal production masters.",
       gallery: ["LoversClub.jpeg"]
+    },
+    
+    // ==========================================
+    // COLOR DEPARTMENT
+    // ==========================================
+    {
+      id: "prj-color-siblings",
+      name: "Siblings",
+      category: "COLOR DEPARTMENT",
+      year: 2025,
+      poster: "Siblings.jpeg",
+      videoUrl: "https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054fb1d23eb649830da0ab7fbde3640&profile_id=165",
+      director: "Rocky Rodriguez Jr.",
+      role: "Digital Intermediate & Master Color Styling",
+      platform: "Theatrical / Selected Festivals",
+      genre: "Art House / Drama",
+      imdbUrl: "https://www.imdb.com",
+      cast: ["Festival Ensembles"],
+      overview: "Finely stylized color aesthetics, utilizing customized film emulations and warm luma balances in an ACES calibrated grading space. Graded on our state-of-the-art DaVinci panels.",
+      gallery: ["Siblings.jpeg"]
+    },
+    {
+      id: "prj-color-10-days-apart",
+      name: "10 Days Apart",
+      category: "COLOR DEPARTMENT",
+      year: 2026,
+      poster: "10-Days-Apart.jpeg",
+      videoUrl: "https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054fb1d23eb649830da0ab7fbde3640&profile_id=165",
+      director: "Anjan Kommineni",
+      role: "Digital Intermediate Color Grading & HDR Mastering",
+      platform: "Theatrical / Selected Festivals",
+      genre: "Drama / Cinema",
+      imdbUrl: "https://www.imdb.com",
+      cast: ["Ensembles"],
+      overview: "A visually sublime feature marked by soft contrast and high dynamic range precision. Color graded entirely in DaVinci Resolve by Vidhan Bommalla to capture the nuanced shifting of autumn hues.",
+      gallery: ["10-Days-Apart.jpeg"]
     }
-  
-  
   ],
   upcomingReleases: [
     {

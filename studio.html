@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAA Phoenix Post Production Studio</title>
 
+    <meta name="description" content="AAA Phoenix Post Production Studio">
+    <meta name="theme-color" content="#ff7a00">
+
     <style>
         *{
             margin:0;
@@ -17,24 +20,60 @@
             height:100%;
             overflow:hidden;
             background:#ffffff;
+            font-family:Arial,sans-serif;
         }
 
-        iframe{
-            width:100%;
+        .website-frame{
+            width:100vw;
             height:100vh;
             border:none;
             display:block;
+        }
+
+        .loading{
+            position:fixed;
+            inset:0;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:#fff;
+            z-index:9999;
+            font-size:18px;
+            color:#ff7a00;
+            font-weight:600;
+        }
+
+        @media (max-width:768px){
+            .loading{
+                font-size:16px;
+            }
         }
     </style>
 </head>
 <body>
 
+<div id="loading" class="loading">
+    Loading AAA Phoenix Studio...
+</div>
+
 <iframe
+    id="siteFrame"
+    class="website-frame"
     src="https://aaa-phoenix-post-production-studio-681263800598.asia-southeast1.run.app"
-    title="AAA Phoenix Post Production Studio"
     loading="eager"
-    allowfullscreen>
-</iframe>
+    allowfullscreen
+></iframe>
+
+<script>
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        const loader = document.getElementById("loading");
+        if(loader){
+            loader.style.display = "none";
+        }
+    },1000);
+});
+</script>
 
 </body>
 </html>

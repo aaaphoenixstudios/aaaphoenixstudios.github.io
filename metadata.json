@@ -1,6 +1,0 @@
-{
-  "name": "AAA Phoenix Post Production Studio",
-  "description": "Premium post production studio for color grading, editing, and spatial sound mixing.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
